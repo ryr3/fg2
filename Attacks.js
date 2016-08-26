@@ -4,7 +4,7 @@ var memory = [],
 var sword;
 
 function bulletPaths() {
-	bulletSpeed = 30/slowdown;
+	bulletSpeed = 120/slowdown;
 
 	for(var num = 0; num < enemies.length; num++){
 		if(!enemies[num].firing) {
@@ -105,8 +105,8 @@ function bulletCreation(num, enemyX, enemyY, playerX, playerY) {
 	var coll = bulletCollision(path[num].x, path[num].y, angle, dir);
 
 	if(player.dead) {
-		//alert("You Died");
-		//window.location.reload();
+		alert("You Died");
+		window.location.reload();
 	}
 
 	if(coll !== "yes") {
