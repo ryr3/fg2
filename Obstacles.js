@@ -1,15 +1,15 @@
 var obstacles = [
 	{//leftbord
-	x:-15,
+	x:-500,
 	y:0,
-	width:15,
+	width:500,
 	height:1500
 	},
 	{//topbord
 	x:0,
-	y:-50,
+	y:-500,
 	width:5*width,
-	height:50
+	height:500
 	},
 	{
 	x : -1000,
@@ -21,12 +21,12 @@ var obstacles = [
     	x : 0,
     	y : height - 30,
     	width : width*(2+2/3),
-    	height : 30
+    	height : 500
 	},
 	{//1
 	x : 450,
 	y : 0,
-	width : 10,
+	width : 17,
 	height : 150
 	},
 	{//2
@@ -255,7 +255,7 @@ var obstacles = [
 	x:width*(2+2/3)+1930+280*2+735,
 	y:0,
 	width:15,
-	height:625
+	height:525
 	},	
 	{//26.3
 	x:width*(2+2/3)+1930+280*2+125,
