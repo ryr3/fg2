@@ -34,11 +34,14 @@ function collisions() {
 
 		for (var num = 0; num < enemyBoundries.length; num++) {	
 			var rebound = collCheck (enemies[count], enemyBoundries[num]);
+			ctx.fillStyle="red";
+			ctx.fillRect(enemyBoundries.x,enemyBoundries.y, enemyBoundries.width, enemyBoundries.height);
 			if (rebound)
             	enemies[count].velX *= -1;
 		}
 
 		for(var num = 4; num < obstacles.length; num++) {
+			
 			var enemyObsCollisions = collCheck (enemies[count], obstacles[num]);
 			if (enemyObsCollisions === "left" || enemyObsCollisions === "right") 
             	enemies[count].velX *= -1;

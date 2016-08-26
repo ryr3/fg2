@@ -278,7 +278,7 @@ var obstacles = [
 ],
 enemyBoundries = [];
 
-for(var count = 44; count < obstacles.length; count++) {
+for(var count = 4; count < obstacles.length; count++) {
 	enemyBoundries.push({
 		x: obstacles[count].x - 9,
 		y: obstacles[count].y - 10,
