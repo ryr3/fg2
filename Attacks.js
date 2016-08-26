@@ -4,7 +4,7 @@ var memory = [],
 var sword;
 
 function bulletPaths() {
-	bulletSpeed = 120/slowdown;
+	bulletSpeed = 20/slowdown;
 
 	for(var num = 0; num < enemies.length; num++){
 		if(!enemies[num].firing) {
