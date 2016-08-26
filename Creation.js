@@ -15,7 +15,7 @@ var	canvas = document.getElementById("canvas"),
 	background = {
 		x : 0,
 		y : 0,
-		width : 5*width,
+		width : 6*width,
 		height : height,
 		velX : 0,
 	},
@@ -27,7 +27,7 @@ var	canvas = document.getElementById("canvas"),
     canvas.height = height;
 function drawBackground() {
 	ctx.clearRect(0, 0, width, height);
-	ctx.fillStyle = "lightBlue";
+	ctx.fillStyle = "black";
 	ctx.fillRect(background.x, background.y, background.width, background.height);
 }
 

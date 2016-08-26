@@ -1,7 +1,7 @@
 function collisions() {
     player.grounded = false;
     for (var count = 0; count < obstacles.length; count++) {
-    	ctx.fillStyle = "black";
+    	ctx.fillStyle = "darkgreen";
         ctx.fillRect(obstacles[count].x, obstacles[count].y, obstacles[count].width, obstacles[count].height);
 
         var obstacleCollision = collCheck (player, obstacles[count]);
@@ -15,11 +15,11 @@ function collisions() {
         if(player.velY >= 0) {
             player.grounded = true;
             player.jumping = false;
-        }
-    }
+        }}
+
 
     for(var count = 0; count < enemies.length; count++) {
-		ctx.fillStyle = "blue";
+		ctx.fillStyle = "red";
 		ctx.fillRect(enemies[count].x, enemies[count].y, enemies[count].width, enemies[count].height);   
 
 		var enemyCollisions = collCheck (player, enemies[count]);

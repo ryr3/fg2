@@ -81,9 +81,9 @@ function controls() {
 	}
 
 	if(!(jump || left || right || fall)) {
-		if(slowdown < 5)
-			slowdown = 5;
-		slip = 0.985;
+		if(slowdown < 13)
+			slowdown = 13;
+		slip = 0.99;
 	}
 	else if (slowdown > 1) {
 		slowdown = 1;
@@ -111,7 +111,7 @@ function controls() {
 
 function update() {
 	//PLAYER
-	ctx.fillStyle = "green";
+	ctx.fillStyle = "teal";
 	ctx.fillRect (player.x, player.y, player.width, player.height);
 
 	//POSITION CHANGE

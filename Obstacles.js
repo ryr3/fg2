@@ -66,7 +66,7 @@ var obstacles = [
     	height : 15    	
 	},
 	{//8
-    	x : 5 * width/8 + width/40+1000,
+    	x : 5 * width/8 + width/40+1030,
     	y : height/4 + 280,
     	width : 9 * width/40-180 ,
     	height : 15    	

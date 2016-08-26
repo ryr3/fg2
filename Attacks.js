@@ -39,7 +39,7 @@ function bulletPaths() {
 		}
 		else {
 			ctx.beginPath();
-			ctx.strokeStyle = "black";
+			ctx.strokeStyle = "violet";
 			ctx.moveTo(eCenter.x, eCenter.y);
 			ctx.lineTo(pCenter.x, pCenter.y);
 			var sightBlock = sightCheck(eCenter.x, eCenter.y, pCenter.x, pCenter.y);
@@ -105,8 +105,8 @@ function bulletCreation(num, enemyX, enemyY, playerX, playerY) {
 	var coll = bulletCollision(path[num].x, path[num].y, angle, dir);
 
 	if(player.dead) {
-		alert("You Died");
-		window.location.reload();
+		//alert("You Died");
+		//window.location.reload();
 	}
 
 	if(coll !== "yes") {
